@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blind'sVision</title>
+  <link rel="icon"
+    href="">
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+  <script data-goatcounter="https://sagittarius.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body>
+  <div id="container">
+   <div class="header">
+    <div style="display:flex;">
+    <h1>Infinite</h1>
+    <h1>Looperz</h1>
+    </div>
+    <div class="switch-container">
+      <!-- <span class="label label-left"><img src="assets/OpenAI-GPT-4.png" id="gptLogo" /></span>
+      <div class="toggle-switch"><div class="toggle-slider" data-position="left"></div></div>
+      <span class="label label-right"><img src="assets/Google-Gemini-AI-Logo.png" id="geminiLogo" /></span> -->
+    </div>
+  </div>
+
+    <video autoplay playsinline webkit-playsinline muted hidden></video>
+
+    <div class="canvasContainer">
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <div id="promptOutput"></div>
+    </div>
+
+    <div class="api-key-container">
+      <form>
+     <label> API Key: </label> <input type="password" id='apiKey' value=''>
+    </form>
+    <button id="startButton">Start</button>
+    </div>
+
+    <div id="instruction">
+    Start speaking and ask the AI what it recognizes, including hand gestures.<br/>
+    Dictation & speech language: <select id='languageSelect'></select>
+    </div>
+
+    
+
+    <div id="debugImages" style="display:block;"></div>
+
+    <div id="footer">
+      <!-- Best experienced using <img src="assets/Google_Chrome_icon.png" id="chromeLogo" /> Google Chrome on desktop<br />
+      Repo: <a href="https://github.com/gregsadetsky/sagittarius" target="blank">github.com/gregsadetsky/sagittarius</a><br />
+      OpenAI Model: <a href="https://platform.openai.com/docs/guides/vision" target="_blank">gpt-4-vision-preview</a><br />
+      Google Gemini Model: <a href="https://ai.google.dev/models/gemini" target="_blank">gemini-pro-vision</a><br /> -->
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+body {
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 800px; /* Increased max-width for better readability */
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+
+#maincontent {
+  max-width: 42em;
+  margin: 15 auto;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#gptLogo {
+  height: 90px;
+  width: auto;
+}
+
+#geminiLogo {
+  height: 60px;
+  width: auto;
+}
+
+#usaFlag {
+  height: 10px;
+  width: auto;
+  margin-right: 5px;
+}
+
+#chromeLogo {
+  height: 15px;
+  width: auto;
+}
+
+#canvas {
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  flex: 1; /* Takes up remaining space */
+  margin-right: 10px; /* Optional: Add spacing between canvas and prompt output */
+}
+
+#promptOutput {
+  flex: 1; /* Takes up remaining space */ 
+  width: 640px;
+  overflow: auto;
+  text-align: left;
+  font-weight: normal;  
+  padding: 10px;
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f8f9fa; /* Background color */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  max-height: 460px;
+  display: flex;
+  flex-direction: column;
+  }
+
+  #startButton {
+    padding: 12px 24px;
+    margin: 0px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  #startButton:hover {
+    background-color: #0056b3;
+  }
+
+#instruction {
+  color: #666; /* Adjusted text color to match the theme */
+  font-size: 16px; /* Increased font size for better readability */
+  font-weight: bold;
+}
+#footer {
+  line-height: 2;
+}
+
+h1{
+  color: aquam;
+}
+
+.header{
+  min-width: 1540px;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;  
+}
+
+
+.switch-container {
+  margin-top: 15px;
+  height: 3em;
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-around; /* Center items horizontally */
+}
+
+.canvasContainer {
+  display: flex;
+}
+
+/* Styling for the toggle switch */
+.toggle-switch {
+  width: 70px; /* Width of the switch */
+  height: 34px; /* Height of the switch */
+  background-color: #e0e0e0; /* Background color */
+  border-radius: 17px; /* Rounded corners */
+  position: relative;
+  margin: 0 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow to the switch */
+}
+
+/* Styling for the toggle slider */
+.toggle-slider {
+  width: 30px; /* Width of the slider */
+  height: 30px; /* Height of the slider */
+  background-color: #007bff; /* Background color of the slider */
+  position: absolute;
+  border-radius: 15px; /* Rounded corners */
+  transition: 0.3s; /* Smooth transition for sliding effect */
+  left: 0; /* Start from left */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); /* Shadow for 3D effect */
+  border: 2px solid #007bff; /* Adds an outline */
+}
+
+/* Styling for the toggle slider when it's active */
+.toggle-slider[data-position="right"] {
+  left: calc(100% - 30px); /* Move to the right side */
+}
+
+#languageSelect {
+  font-family: Arial, sans-serif; /* Example font family */
+  font-size: 14px; /* Example font size */
+  padding: 8px; /* Example padding */
+  border: 1px solid #ccc; /* Example border */
+  border-radius: 4px; /* Example border radius */
+  background-color: #fff; /* Example background color */
+  color: #333; /* Example text color */
+  width: 200px; /* Example width */
+}
+
+.label {
+  color: #333; /* Text color */
+  font-size: 14px; /* Text size */
+  font-weight: bold;
+}
+
+label{
+    color: #666; /* Adjusted text color to match the theme */
+    font-size: 16px; /* Increased font size for better readability */
+    font-weight: bold;
+  
+}
+
+.api-key-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin:20px 10px;
+}
+
+.api-key-container input[type="password"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f8f9fa; /* Background color */
+  transition: border-color 0.3s ease;
+}
+
+.api-key-container input[type="password"]:focus {
+  border-color: #0056b3; /* Border color on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+
+/* Style for each individual chat message */
+.chat-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 70%;
+}
+
+/* Style for messages from "YOU" */
+.you {
+  background-color: #525861; /* Blue background color */
+  color: #fff; /* White text color */
+  align-self: flex-end; /* Aligns the message to the right side */
+  margin-left: auto; /* Pushes the message to the right */
+  margin-bottom: 15px;
+}
+
+/* Style for messages from "AI" */
+.ai {
+  background-color: #363738; /* Light gray background color */
+  color: #fff; /* Dark text color */
+  align-self: flex-start; /* Aligns the message to the left side */
+  margin-right: auto; /* Pushes the message to the left */
+  margin-bottom: 15px;
+}

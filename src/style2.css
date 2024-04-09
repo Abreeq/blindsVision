@@ -1,0 +1,106 @@
+/* Resetting default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.api-key-container {
+  margin-top: 20px;
+}
+
+.api-key-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.api-key-container input[type="password"]:focus {
+  border-color: #007bff;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.canvas-container {
+  margin-top: 20px;
+}
+
+.canvas-container canvas {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+#instruction {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#startButton {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#startButton:hover {
+  background-color: #0056b3;
+}
+
+#promptOutput {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: auto;
+  max-height: 200px;
+}
+
+#footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
